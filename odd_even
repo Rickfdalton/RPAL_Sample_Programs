@@ -1,0 +1,1 @@
+let f n = n/2*2 eq n -> 'even' | 'odd' in Print(f(35))

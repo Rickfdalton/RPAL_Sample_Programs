@@ -1,0 +1,3 @@
+let f1 x = x<0 -> 'negative' | (x>0 -> 'positive' | 'zero')
+in
+Print(f1(-1))

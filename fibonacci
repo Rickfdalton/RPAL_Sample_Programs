@@ -1,0 +1,15 @@
+let rec fib (N) =
+    N eq 1 -> 1|
+    N eq 2 -> 1|
+    fib(N-1) + fib(N-2)
+in
+let rec f(a,b)=
+    Print(fib(b)),
+    Print(' '),
+    b eq a -> b
+    |
+    f(a,b-1)
+in
+f(1,10)
+
+    

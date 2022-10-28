@@ -1,0 +1,24 @@
+let rec f n =
+n eq 0 -> '0' |
+n eq 1 -> '1'  |
+n eq 2 -> '2'|
+n eq 3 -> '3'|
+n eq 4 -> '4' |
+n eq 5 -> '5' |
+n eq 6 -> '6' |
+n eq 7 -> '7' |
+n eq 8 -> '8' |
+n eq 9 -> '9' |
+Conc (f(n/10)) (f(n-n/10*10))
+in
+let rec r s  = s eq ''->'' | Conc (r (Stern s)) (Stem s)
+within
+p s = not Isstring s -> 'error' | s eq r s
+in
+let rec f2(a,b)=
+    p (f(b))->Print(b,' ' )| '',
+    b eq a -> b|
+    f2(a,b-1)
+in
+f2(100,150)
+//make sure the range contain 50 numbers. or else there will memory allocation errors

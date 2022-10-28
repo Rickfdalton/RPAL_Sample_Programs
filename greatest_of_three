@@ -1,0 +1,9 @@
+let L =(1,6,34)
+in
+let A = L 1 and B = L 2 and C = L 3
+in 
+let temp_max = (A > B -> A | B)
+in 
+let max = (C > temp_max -> C | temp_max)
+in
+Print(max)
